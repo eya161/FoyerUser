@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 10px 0;
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            background-color: #696969;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .header {
+            background-color: #696969;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Email Invitation</h1>
+    </div>
+    <p>Dear [[${recipientName}]],</p>
+    <p>You have been invited to join our platform. Please click the link below to proceed:</p>
+    <a href="[[${invitationLink}]]">Join Now</a>
+</div>
+<div class="footer">
+    © [[${currentYear}]] ProfDev. All rights reserved.
+</div>
+</body>
+</html>
