@@ -29,5 +29,6 @@ public class User implements Serializable {
     Long cin;
     //@Temporal(TemporalType.DATE)
     Date dateNaissance;
+    //to tell if it is blocked or not
     Boolean isEnabled=false;
 }
