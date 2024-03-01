@@ -43,6 +43,7 @@ public class UserServiceImpl implements IUserService{
     public void deleteUser(Long idUser) {
         userRepository.deleteById(idUser);
     }
+    //add user
     @Override
     public User addUser(User user) {
         validateUserDoesNotExist(user.getEmail());
